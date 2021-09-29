@@ -19,6 +19,9 @@ function App() {
           <Route path="/friends">
             <Friends />
           </Route>
+          <Route exact path="/">
+            <Home />
+          </Route>
           <Route path="*">
             <NotFound />
           </Route>
