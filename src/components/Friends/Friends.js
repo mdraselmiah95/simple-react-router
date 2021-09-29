@@ -9,4 +9,3 @@ const Friends = () => {
 };
 
 export default Friends;
-<h2>This is friends Page.</h2>;
