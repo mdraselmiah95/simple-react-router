@@ -8,6 +8,9 @@ const Friend = (props) => {
       <h4>Call me: {phone}</h4>
       <h3>Email: {email}</h3>
       <h5>Visit me: {website}</h5>
+      <p>
+        <small>I live in: {address.city}</small>
+      </p>
     </div>
   );
 };
