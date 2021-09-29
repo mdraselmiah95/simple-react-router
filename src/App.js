@@ -2,17 +2,21 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import About from "./components/About/About";
 import Friends from "./components/Friends/Friends";
+import Home from "./components/Home/Home";
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Switch>
+          <Route path="/home">
+            <Home />
+          </Route>
           <Route path="/friends">
-            <Friends></Friends>
+            <Friends />
           </Route>
           <Route path="/about">
-            <About></About>
+            <About />
           </Route>
         </Switch>
       </Router>
