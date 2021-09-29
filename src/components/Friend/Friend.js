@@ -1,15 +1,17 @@
 import React from "react";
-
+import "./Friend.css";
 const Friend = (props) => {
   const { name, email, phone, website, address } = props.friend;
   return (
-    <div>
+    <div className="friend">
       <h2>I am {name}</h2>
       <h4>Call me: {phone}</h4>
       <h3>Email: {email}</h3>
       <h5>Visit me: {website}</h5>
       <p>
-        <small>I live in: {address.city}</small>
+        <small>
+          I live in: {address.city} & {address.street}
+        </small>
       </p>
     </div>
   );
