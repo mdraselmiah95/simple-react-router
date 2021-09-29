@@ -1,6 +1,7 @@
-.header {
-  margin: 10px 0;
+nav {
+  margin: 20px 0;
 }
-.Link {
-  margin-left: 10px;
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
 }
