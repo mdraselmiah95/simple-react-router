@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Friend from "../Friend/Friend";
+import "./Friends.css";
 
 const Friends = () => {
   const [friends, setFriends] = useState([]);
@@ -11,10 +12,12 @@ const Friends = () => {
   }, []);
   return (
     <div>
-      <h2>This is friends Page.{friends.length}</h2>
-      {friends.map((friend) => (
-        <Friend key={friend.id} friend={friend} />
-      ))}
+      <h2>This is friends Page: {friends.length}</h2>
+      <div className="friends-container">
+        {friends.map((friend) => (
+          <Friend key={friend.id} friend={friend} />
+        ))}
+      </div>
     </div>
   );
 };
