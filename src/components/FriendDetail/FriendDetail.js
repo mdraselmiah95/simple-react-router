@@ -15,7 +15,7 @@ const FriendDetail = () => {
       <h3>This is friend details: {friendId}</h3>
       <h1>{friend.name}</h1>
       <h3>Phone: {friend.phone}</h3>
-      <p>Works at: {friend.company.name}</p>
+      <p>Works at: {friend.company?.name}</p>
     </div>
   );
 };
