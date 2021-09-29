@@ -2,10 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Friend.css";
 const Friend = (props) => {
-  const { name, email, phone, website, address } = props.friend;
+  const { id, name, email, phone, website, address } = props.friend;
+  const url = `/friend/${id}`;
   return (
     <div className="friend">
-      <h2>I am {name}</h2>
+      <h2>
+        I am {name} {id}
+      </h2>
       <h4>Call me: {phone}</h4>
       <h3>Email: {email}</h3>
       <h5>Visit me: {website}</h5>
@@ -14,7 +17,7 @@ const Friend = (props) => {
           I live in: {address.city} & {address.street}
         </small>
       </p>
-      <Link to="/friend">Visit me</Link>
+      <Link to={`/friend/${id}`}>Visit me</Link>
     </div>
   );
 };
