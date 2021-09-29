@@ -1,9 +1,16 @@
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
-import Friend from "./components/Friends/Friends";
+import Friends from "./components/Friends/Friends";
 function App() {
   return (
     <div className="App">
-      <Friend />
+      <Router>
+        <Switch>
+          <Route path="/friends">
+            <Friends></Friends>
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
