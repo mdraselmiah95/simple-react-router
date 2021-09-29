@@ -1,10 +1,10 @@
 import React from "react";
-import { Link as NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Header.css";
 const Header = () => {
   const activeStyle = {
     fontWeight: "bold",
-    color: "red",
+    color: "gold",
   };
   return (
     <nav>
