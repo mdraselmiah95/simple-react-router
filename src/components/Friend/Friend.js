@@ -6,7 +6,7 @@ const Friend = (props) => {
   const url = `/friend/${id}`;
   const history = useHistory();
   const handleFriendClick = () => {
-    history.push("/home");
+    history.push(`/friend/${id}`);
   };
   return (
     <div className="friend">
