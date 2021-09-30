@@ -1,0 +1,7 @@
+.post {
+  border: 2px solid gray;
+  margin: 5px;
+  padding: 8px;
+  background-color: lightcyan;
+  border-radius: 5px;
+}
