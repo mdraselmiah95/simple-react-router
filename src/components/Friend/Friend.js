@@ -17,7 +17,10 @@ const Friend = (props) => {
           I live in: {address.city} & {address.street}
         </small>
       </p>
-      <Link to={url}>Visit me</Link>
+      <Link to={url}>Visit me</Link> <br />
+      <Link to={url}>
+        <button>Visit me</button>
+      </Link>
     </div>
   );
 };
