@@ -23,4 +23,3 @@ const Friend = (props) => {
 };
 
 export default Friend;
-<h2>THis is a single friend.</h2>;
